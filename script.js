@@ -1,4 +1,4 @@
-let calendar1; // Define calendar1 as a global variable
+let calendar1; 
 
 const isValidate = (calendar1, calendar2, dropdown1, dropdown2, dropdown3) => {
   if (isNaN(calendar1) || isNaN(calendar2) || !dropdown1 || !dropdown2 || !dropdown3) {
@@ -74,5 +74,5 @@ function getWeekOfMonth(date) {
   return segment;
 }
 
-// Attach the event listener to the 'change' event of the first calendar input
+
 document.getElementById('calendar1').addEventListener('change', onValueChangeCalander1);
