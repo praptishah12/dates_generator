@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dates Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-column">
+            <h1> Dates Generator</h1>
+            <label for="calendar1">Calendar 1:</label>
+            <input type="date" id="calendar1" required>
+
+            <label for="calendar2">Calendar 2:</label>
+            <input type="date" id="calendar2" required>
+
+            <label for="dropdown1">Dropdown 1:</label>
+            <select id="dropdown1" required>
+                <option value="all">All</option>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+            </select>
+
+            <label for="dropdown2">Dropdown 2:</label>
+            <select id="dropdown2" required>
+                <option value="all">All</option>
+                <option value="sunday">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+            </select>
+
+            <label for="dropdown3">Dropdown 3:</label>
+            <select id="dropdown3" required>
+                <option value="every">Every Month</option>
+                <option value="alternate">Alternate Month</option>
+            </select>
+
+            <button onclick="generateDates()">Submit</button>
+        </div>
+
+        <div class="output-column">
+            <h2> Generated Dates</h2>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
